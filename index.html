@@ -1,0 +1,34 @@
+.<!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do List</title>
+  </head>
+<body bgcolor="White">
+
+<h1 align="center" style="color:red">Lista delle cose da fare</h1>
+<p style="color:blue">Questo sito ti permette di aggiungere un'attività che devi fare, scrivi l'attività e poi clicca "AGGIUNGI". Se hai completato un'attività puoi toglierla dalla lista con il suo numero e poi clicca "ELIMINA"</p>
+
+ <p>
+        Nuova attività:
+        <input type="text" id="testoAttivita" name="testoAttivita" size="30">
+
+        <input type="button" value="AGGIUNGI" onclick="AggiungiAttivita()">
+    </p>
+ 
+    <p>
+      </p>
+  
+      <p>
+        Elenco delle attività:<br>
+        <textarea id="txtLista" name="txtLista" rows="10" cols="50" readonly></textarea>
+    </p>
+ 
+    <p>
+        Numero attività completata:
+        <input type="text" id="testoNumero" name="testoNumero" size="3">
+
+        <input type="button" value="ELIMINA" onclick="RimuoviAttivita()">
+    </p>
+  <script src="script.js"></script>
+</body>
+</html>
